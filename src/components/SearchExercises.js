@@ -22,18 +22,6 @@ const SearchExercises = ({setExercises,bodyPart,setBodyPart}) => {
        const exercisesData = await fetchData(
         'https://exercisedb.p.rapidapi.com/exercises'
         , exerciseOptions );
-      
-      // const exercisesData=fetch(`https://exercisedb.p.rapidapi.com/exercises`,{
-      //   method: 'GET',
-      //   headers: {
-      //     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-      //     'X-RapidAPI-Key': 'a570999787msh521e9ebdfd7fad9p107f22jsn1399b98fd10f'
-      //   } 
-      // })
-      //    .then((response) => response.json())
-      //    .then((data) => console.log(data));
-        
-       // console.log(exercisesData); 
 
        const searchedExercises =exercisesData.filter(
         (exercise )=>exercise.name.toLowerCase().includes(search)
