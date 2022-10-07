@@ -1,0 +1,22 @@
+
+@media screen and (min-width: 701px) {
+    .hero-banner-img {
+        /* height: 800px; */
+        margin-top: 20px;    
+        width:90%
+     }
+}
+@media screen and (max-width: 700px) {
+    .hero-banner-img {
+        /* height: 800px; */
+        margin-top: 20px;    
+        width:70%
+     }
+}
+@media screen and (max-width: 400px) {
+    .hero-banner-img {
+        /* height: 800px; */
+        margin-top: 20px;    
+        width:60%
+     }
+}
